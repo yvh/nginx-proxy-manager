@@ -11,8 +11,8 @@ services:
             - ./data:/data
             - ./letsencrypt:/etc/letsencrypt
         environment:
-            PUID: 1000
-            PGID: 1000
+            PUID: ${UID:-1000}
+            PGID: ${GID:-1000}
             DISABLE_IPV6: "true"
 
 networks:
