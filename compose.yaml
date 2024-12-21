@@ -1,3 +1,4 @@
+name: npm
 services:
     npm:
         container_name: npm
@@ -15,6 +16,3 @@ services:
             PGID: ${GID:-1000}
             DISABLE_IPV6: "true"
 
-networks:
-    default:
-        name: npm
