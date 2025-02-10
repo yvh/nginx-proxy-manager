@@ -2,7 +2,7 @@ name: npm
 services:
     npm:
         container_name: npm
-        image: "jc21/nginx-proxy-manager:latest"
+        image: jc21/nginx-proxy-manager:latest
         restart: unless-stopped
         ports:
             - "80:80"
