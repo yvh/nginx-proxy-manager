@@ -15,4 +15,3 @@ services:
             PUID: ${UID:-1000}
             PGID: ${GID:-1000}
             DISABLE_IPV6: "true"
-
