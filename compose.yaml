@@ -9,9 +9,12 @@ services:
             - "127.0.0.1:81:81"
             - "443:443"
         volumes:
-            - ./data:/data
-            - ./letsencrypt:/etc/letsencrypt
+            - data:/data
+            - letsencrypt:/etc/letsencrypt
         environment:
             PUID: ${UID:-1000}
             PGID: ${GID:-1000}
             DISABLE_IPV6: "true"
+volumes:
+    data:
+    letsencrypt:
